@@ -1,0 +1,15 @@
+.welcomeBlock {
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+.presentation {
+    width: 300px;
+    background-color: aqua;
+}
+
+.photo {
+    background-color: yellow;
+    width: 300px;
+    height: 400px;
+}

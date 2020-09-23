@@ -1,14 +1,11 @@
 import React from 'react';
+import s from './Header.module.css'
+import {Nav} from "./Nav/Nav";
 
-export function Header () {
+export function Header() {
     return (
-        <div>
-            <div>
-                <span>Main</span>
-                <span>Skills</span>
-                <span>Work</span>
-                <span>Contacts</span>
-            </div>
+        <div className={s.header}>
+            <Nav/>
         </div>
     )
 }

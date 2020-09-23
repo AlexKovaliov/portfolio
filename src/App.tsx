@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./Components/Header/Header";
+import {Header} from './Components/Header/Header';
 import {WelcomeBlock} from "./Components/WelcomeBlock/WelcomeBlock";
+import {SkillsBlock} from "./Components/SkillsBlock/SkillsBlock";
 
 function App() {
     return (
-        <div>
+        <div className="App">
             <Header/>
             <WelcomeBlock/>
+            <SkillsBlock/>
         </div>
     );
 }
