@@ -1,0 +1,15 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    text-align: center;
+    background-color: brown;
+}
+
+.img {
+    justify-content: center;
+    width: 450px;
+    height: 300px;
+    background-color: bisque;
+}
