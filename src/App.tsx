@@ -19,7 +19,7 @@ function App() {
             <ContactsBlock/>
             <FooterBlock/>
         </div>
-    );
+    )
 }
 
 export default App;
