@@ -1,0 +1,24 @@
+@import '../../common/sass/variables';
+
+.worksBlock {
+  min-height: 100vh;
+  background-color: $bgSecondColor;
+
+  .worksContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .works {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      border: 1px solid red;
+
+      .title {
+        background-color: darkgray;
+      }
+    }
+  }
+}

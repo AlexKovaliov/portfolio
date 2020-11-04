@@ -1,0 +1,19 @@
+@import '../../../common/sass/variables';
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+  width: 320px;
+  background-color:$bgColor;
+
+  & a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $textSecondColor;
+    margin: 0 10px;
+    padding-right: 15px;
+  }
+}

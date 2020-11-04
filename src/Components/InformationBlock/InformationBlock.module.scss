@@ -1,0 +1,54 @@
+@import '../../common/sass/variables';
+
+.informationBlock {
+  min-height: 60vh;
+  background-color: $bgSecondColor;
+
+  .containerInfo {
+    flex-direction: column;
+
+    .infoWrapper {
+      align-self: stretch;
+      display: flex;
+      justify-content: space-between;
+
+      .presentation {
+        height: 95%;
+        width: 60%;
+        background-color: aqua;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $textSecondColor;
+        padding-left: 5px;
+        flex-wrap: wrap;
+
+        & h3 {
+          color: $textSecondColor;
+          letter-spacing: 1px;
+          font-size: 18px;
+          font-family: 'Montserrat', sans-serif;
+          margin: 0 0 15px;
+          text-transform: uppercase;
+          font-weight: 600;
+          padding-left: 10px;
+          flex-wrap: wrap;
+        }
+      }
+
+      .column {
+        background-color: yellow;
+        width: 35%;
+        height: 95%;
+      }
+
+      @media screen and (max-width: 1029px) {
+        align-self: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 2%;
+      }
+    }
+  }
+}

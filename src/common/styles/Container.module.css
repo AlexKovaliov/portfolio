@@ -9,8 +9,3 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 749px) {
-    .container {
-        justify-content: center;
-    }
-}

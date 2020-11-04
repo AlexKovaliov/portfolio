@@ -1,6 +1,6 @@
 import React from "react";
 import styleContainer from "../../common/styles/Container.module.css";
-import s from "../WorksBlock/WorksBlock.module.css";
+import s from "../WorksBlock/WorksBlock.module.scss";
 import {Work} from "./Work/Work";
 import {Title} from "../../common/generalComponents/Title/Title";
 
@@ -10,9 +10,9 @@ export function WorksBlock() {
             <div className={`${styleContainer.container} ${s.worksContainer}`}>
                 <Title text={"My works"}/>
                 <div className={s.works}>
-                    <Work title={"Name of project"}
+                    <Work title={"Social network"}
                           description={"Short description"}/>
-                    <Work title={"Name of project"}
+                    <Work title={"To do lists"}
                           description={"Short description"}/>
                 </div>
             </div>

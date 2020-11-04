@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Work.module.css'
+import s from './Work.module.scss'
 
 export type WorkType = {
     title: string,

@@ -1,7 +1,8 @@
 import React from "react";
-import s from './ContactsBlock.module.css'
+import s from './ContactsBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Title} from "../../common/generalComponents/Title/Title";
+import {Button} from "../../common/generalComponents/Button/Button";
 
 export function ContactsBlock() {
     return (
@@ -12,7 +13,7 @@ export function ContactsBlock() {
                     <input type="text"/>
                     <input type="text"/>
                     <textarea name="text me"></textarea>
-                    <button type="submit" className={s.submitBtn}>Send</button>
+                    <Button title={"Send"}/>
                 </form>
             </div>
         </div>

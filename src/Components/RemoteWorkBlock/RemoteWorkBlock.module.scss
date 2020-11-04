@@ -1,0 +1,32 @@
+@import '../../common/sass/variables';
+
+
+.remoteContainer {
+  background-color: $bgColor;
+  width: 100%;
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 1px solid;
+
+    .content {
+      border: 1px solid red;
+      justify-content: space-around;
+
+      & h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        color: $textSecondColor;
+      }
+    }
+  }
+}

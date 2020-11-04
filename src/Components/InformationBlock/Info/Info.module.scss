@@ -1,23 +1,29 @@
-.info {
-    color: #757575;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+@import '../../../common/sass/variables';
 
-.infoTitle {
+.info {
+  color: $textSecondColor;
+  display: flex;
+  align-items: center;
+
+  .infoTitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
-}
+    margin-right: 15px;
+  }
 
-.infoData {
+  .infoData {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: #979797;
+    color: $textSecondColor;
     margin: 0;
+  }
 }
+
+
+
+
+

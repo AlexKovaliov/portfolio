@@ -1,6 +1,7 @@
 import React from 'react'
-import s from './RemoteWorkBlock.module.css'
+import s from './RemoteWorkBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
+import {Button} from "../../common/generalComponents/Button/Button";
 
 export function RemoteWorkBlock() {
     return (
@@ -8,7 +9,7 @@ export function RemoteWorkBlock() {
             <div className={s.cover}>
                 <div className={s.content}>
                     <h3>I am considering options for remote work</h3>
-                    <button>Hire me</button>
+                    <Button title={"Hire me"}/>
                 </div>
             </div>
         </div>

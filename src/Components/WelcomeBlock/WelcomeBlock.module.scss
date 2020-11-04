@@ -1,0 +1,46 @@
+@import '../../common/sass/variables';
+
+
+.welcomeBlock {
+  height: 100vh;
+  background-color:$bgColor;
+
+  .presentation {
+    width: 550px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $textSecondColor;
+
+    & h5 & h1 {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      margin: 0 0 15px;
+    }
+
+    & h5 {
+      color: $textSecondColor;
+      letter-spacing: 1px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    & h1 {
+      color: $textColor;
+      font-size: 44px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+  }
+
+  .photo {
+    background-color: yellow;
+    width: 300px;
+    height: 400px;
+  }
+
+  @media screen and (max-width: 749px) {
+    justify-content: center;
+  }
+}

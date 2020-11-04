@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './WelcomeBlock.module.css'
+import s from './WelcomeBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 
 export function WelcomeBlock() {
@@ -7,9 +7,9 @@ export function WelcomeBlock() {
         <div className={s.welcomeBlock}>
             <div className={styleContainer.container}>
                 <div className={s.presentation}>
-                    <span>Hi There</span>
-                    <h1>I am Alexander Kovaliov</h1>
-                    <p>Front-end Developer</p>
+                    <h5>Hello, my name is</h5>
+                    <h1>Alexander Kovaliov</h1>
+                    <p>I am a Front-end Developer</p>
                 </div>
                 <div className={s.photo}>--Here will be img--</div>
             </div>
