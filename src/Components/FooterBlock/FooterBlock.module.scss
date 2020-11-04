@@ -1,4 +1,5 @@
 @import '../../common/sass/variables';
+@import '../../common/sass/mixins';
 
 .footerContainer {
   flex-direction: column;
@@ -9,27 +10,23 @@
   flex-wrap: wrap;
   text-align: center;
   background-color: $bgColor;
-  border: 1px solid;
 
   .content {
     flex-direction: column;
     width: 80%;
     display: flex;
-    border: 1px solid;
     justify-content: space-between;
     align-items: center;
 
     .links {
       width: 50%;
       display: flex;
-      border: 1px solid red;
+      padding-top: 2%;
       justify-content: space-between;
 
       & a {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        @include fonts($fontText, 16px, 500);
         line-height: 24px;
-        font-weight: 500;
         color: $textSecondColor;
         margin: 0 10px;
         padding-right: 15px;
@@ -37,11 +34,9 @@
     }
 
     & p {
-      font-family: 'Poppins', sans-serif;
+      @include fonts($fontText, 14px, 400);
       color:$textSecondColor;
-      font-size: 14px;
       line-height: 24px;
-      font-weight: 400;
     }
   }
 }

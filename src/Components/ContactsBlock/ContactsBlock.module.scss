@@ -8,18 +8,16 @@
   .contactsBlock {
     flex-direction: column;
     display: flex;
-    height: 100vh;
+    height: 73vh;
     width: 80%;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px solid;
 
     .form {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      border: 1px solid red;
       width: 70%;
       height: 70%;
 

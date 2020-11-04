@@ -2,7 +2,9 @@ import React from "react";
 import s from './FooterBlock.module.scss'
 import styleContainer from "../../common/styles/Container.module.css";
 
+
 export function FooterBlock() {
+
     return (
         <div className={`${styleContainer.container} ${s.footerContainer}`}>
             <div className={s.content}>

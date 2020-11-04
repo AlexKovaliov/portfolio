@@ -45,7 +45,7 @@ export function SkillsBlock() {
                 <div className={s.skills}>
 
                     <Skill title={"HTML, CSS"}
-                           description={"text"}
+                           description={"web make-up, scss, variables, mixins"}
                            icon={iconHtml}
                     />
 

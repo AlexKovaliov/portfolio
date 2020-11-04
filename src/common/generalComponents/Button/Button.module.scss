@@ -1,0 +1,21 @@
+@import 'src/common/sass/variables';
+@import 'src/common/sass/mixins';
+
+.cover {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 3%;
+
+  & button {
+    @include fonts($fontTitle, 14px, 600);
+    background-color: $buttonColor;
+    border: 0 none;
+    border-radius: 5px;
+    height: 47px;
+    line-height: 50px;
+    padding: 0 30px;
+    color: $bgSecondColor;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}

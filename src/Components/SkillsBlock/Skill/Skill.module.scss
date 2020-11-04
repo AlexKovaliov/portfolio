@@ -1,4 +1,5 @@
 @import '../../../common/sass/variables';
+@import '../../../common/sass/mixins';
 
 .skill {
   color: $textSecondColor;
@@ -9,7 +10,7 @@
   height: 290px;
   text-align: center;
   margin-top: 2%;
-  border: 1px solid $borderColor;
+  border: 1px solid $lineAndBorderColor;
 
   .icon {
     width: 70px;
@@ -21,9 +22,7 @@
   }
 
   .skillTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
+    @include fonts($fontTitle, 15px, 500);
     text-transform: uppercase;
   }
 
@@ -31,14 +30,12 @@
     width: 50px;
     margin: 15px auto;
     border: 0;
-    border-top: 2px solid #eee;
+    border-top: 2px solid $lineAndBorderColor;
   }
 
   .s.description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    @include fonts($fontText, 14px, 400);
     line-height: 24px;
-    font-weight: 400;
     color: $textSecondColor;
     margin: 0;
   }

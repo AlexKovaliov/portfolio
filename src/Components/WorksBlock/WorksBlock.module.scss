@@ -14,10 +14,9 @@
       flex-wrap: wrap;
       justify-content: space-around;
       width: 100%;
-      border: 1px solid red;
 
       .title {
-        background-color: darkgray;
+        background-color: $lineAndBorderColor;
       }
     }
   }

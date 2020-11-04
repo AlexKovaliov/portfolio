@@ -1,36 +1,37 @@
-.title {
-    margin: 0 0 60px;
-    position: relative;
-}
+@import 'src/common/sass/variables';
+@import 'src/common/sass/mixins';
 
-.title h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    color: #484848;
+.title {
+  margin: 0 0 60px;
+  position: relative;
+
+  & h2 {
+    @include fonts ($fontTitle, 32px, 700);
+    color: $textColor;
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: 20px;
-}
+  }
 
-.title::after {
+  & ::after {
     content: "";
     position: absolute;
     width: 44px;
-    background: #bcbcbc;
+    background: $lineAndBorderColor;
     height: 2px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
-}
+  }
 
-.title::before {
+  & ::before {
     content: "";
     position: absolute;
     width: 77px;
-    background: #bcbcbc;
+    background: $lineAndBorderColor;
     height: 2px;
     bottom: -5px;
     left: 50%;
     transform: translate(-50%, 50%);
+  }
 }
