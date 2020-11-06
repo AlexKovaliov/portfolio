@@ -7,20 +7,23 @@ import {WorksBlock} from "./Components/WorksBlock/WorksBlock";
 import {RemoteWorkBlock} from "./Components/RemoteWorkBlock/RemoteWorkBlock";
 import {ContactsBlock} from "./Components/ContactsBlock/ContactsBlock";
 import {FooterBlock} from "./Components/FooterBlock/FooterBlock";
-import { InformationBlock } from './Components/InformationBlock/InformationBlock';
+import {InformationBlock} from './Components/InformationBlock/InformationBlock';
+import {BrowserRouter} from "react-router-dom"
 
 function App() {
     return (
-        <div className="App">
-            <Header/>
-            <WelcomeBlock/>
-            <InformationBlock/>
-            <SkillsBlock/>
-            <WorksBlock/>
-            <RemoteWorkBlock/>
-            <ContactsBlock/>
-            <FooterBlock/>
-        </div>
+        <BrowserRouter>
+            <div className="App">
+                <Header/>
+                 <WelcomeBlock/>
+                <InformationBlock/>
+                <SkillsBlock/>
+                <WorksBlock/>
+                <RemoteWorkBlock/>
+                <ContactsBlock/>
+                <FooterBlock/>
+            </div>
+        </BrowserRouter>
     )
 }
 

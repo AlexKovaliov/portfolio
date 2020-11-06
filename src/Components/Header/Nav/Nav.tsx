@@ -1,15 +1,15 @@
 import React from 'react';
 import s from './Nav.module.scss'
 
+
 export function Nav() {
+
     return (
         <div className={s.nav}>
-
-            <a href="">Main</a>
-            <a href="">Skills</a>
-            <a href="">Work</a>
-            <a href="">Contacts</a>
-
+            <a>Main</a>
+            <a>Skills</a>
+            <a>Works</a>
+            <a>Contacts</a>
         </div>
     )
 }

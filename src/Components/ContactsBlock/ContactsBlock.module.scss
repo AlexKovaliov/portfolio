@@ -1,4 +1,5 @@
 @import '../../common/sass/variables';
+@import '../../common/sass/mixins';
 
 .contactsContainer {
   width: 100%;
@@ -9,7 +10,7 @@
     flex-direction: column;
     display: flex;
     height: 73vh;
-    width: 80%;
+    width: 70%;
     flex-wrap: wrap;
     align-items: center;
 
@@ -28,5 +29,89 @@
         }
       }
     }
+
+    .infoWrapper {
+      padding-right: 15%;
+      padding-top: 5%;
+
+      .line {
+        @include line();
+      }
+
+      .icon {
+        border: 1px solid $lineAndBorderColor;
+        border-radius: 50%;
+        float: left;
+        font-size: 26px;
+        height: 47px;
+        line-height: 47px;
+        margin-right: 12px;
+        margin-top: 18px;
+        text-align: center;
+        width: 47px;
+        color: $lineAndBorderColor;
+      }
+
+    }
+
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+
+      .emailRow {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+
+        .nameCover {
+          width: 45%;
+          padding-right: 15px;
+
+          .name {
+            @include fonts($fontText, 14px, 400);
+            width: 100%;
+            line-height: 26px;
+            border: none;
+            border-bottom: 1px solid $lineAndBorderColor;
+            padding: 5px 0;
+          }
+        }
+
+        .emailCover {
+          width: 45%;
+          padding-right: 10px;
+
+          .email {
+            @include fonts($fontText, 14px, 400);
+            width: 100%;
+            line-height: 26px;
+            color: #b3b3b3;
+            border: none;
+            border-bottom: 1px solid $lineAndBorderColor;
+            padding: 5px 0;
+          }
+        }
+      }
+
+      .areaCover {
+        padding-top: 40px;
+        padding-left: 95px;
+        width: 90%;
+
+        .area {
+          padding-top: 5px;
+          padding-left: 30px;
+          width: 77%;
+          height: 90%;
+          resize: none;
+          border-color: $lineAndBorderColor;
+          @include fonts($fontText, 14px, 400);
+
+        }
+      }
+    }
   }
 }
+
+
+

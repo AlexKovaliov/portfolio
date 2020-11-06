@@ -12,7 +12,6 @@ export function FooterBlock() {
                     <a href="#">LinkedIn</a>
                     <a href="#">GitHub</a>
                     <a href="#">CodeWars</a>
-                    <a href="#">My email</a>
                 </div>
                 <p> &copy; 2020 All Rights Reserved. By Alex Kovalev</p>
             </div>

@@ -5,3 +5,10 @@
   font-size: $fontSize;
   font-weight: $fontWeight;
 }
+
+@mixin line() {
+  width: 50px;
+  margin: 15px 0;
+  border: 0;
+  border-top: 2px solid $lineAndBorderColor;
+}

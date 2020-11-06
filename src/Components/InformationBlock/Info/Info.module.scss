@@ -2,12 +2,13 @@
 @import '../../../common/sass/mixins';
 
 .info {
-  color: $textSecondColor;
+  color: $textColor;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: self-start;
 
   .infoTitle {
-    @include fonts($fontTitle, 15px, 500);
+    @include fonts($fontTitle, 16px, 500);
     text-transform: uppercase;
     margin-right: 15px;
   }

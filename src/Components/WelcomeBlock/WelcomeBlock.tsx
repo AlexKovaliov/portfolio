@@ -2,6 +2,9 @@ import React from 'react';
 import s from './WelcomeBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 
+
+
+
 export function WelcomeBlock() {
     return (
         <div className={s.welcomeBlock}>

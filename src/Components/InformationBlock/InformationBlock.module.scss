@@ -16,10 +16,11 @@
       .presentation {
         @include fonts($fontText, 16px, 400);
         height: 95%;
-        width: 60%;
+        width: 95%;
         line-height: 24px;
         color: $textSecondColor;
         padding-left: 5px;
+        padding-right: 265px;
         flex-wrap: wrap;
 
         & h3 {
@@ -35,6 +36,10 @@
       .column {
         width: 35%;
         height: 95%;
+
+        .line {
+          @include line;
+        }
       }
 
       @media screen and (max-width: 1029px) {
