@@ -6,11 +6,12 @@ import {Info} from "./Info/Info";
 import {Button} from "../../common/generalComponents/Button/Button";
 
 
+
 export function InformationBlock() {
     return (
         <div className={s.informationBlock}>
             <div className={`${styleContainer.container} ${s.containerInfo}`}>
-                <Title text={"About me"}/>
+                <Title isLeft={true} text={"About me"}/>
                 <div className={s.infoWrapper}>
                     <div className={s.presentation}>
                         <h3>Hi!</h3>

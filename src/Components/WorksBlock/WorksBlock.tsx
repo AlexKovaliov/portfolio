@@ -8,7 +8,7 @@ export function WorksBlock() {
     return (
         <div className={s.worksBlock}>
             <div className={`${styleContainer.container} ${s.worksContainer}`}>
-                <Title text={"My works"}/>
+                <Title isLeft={true} text={"My works"}/>
                 <div className={s.works}>
                     <Work title={"Social network"}
                           description={"Short description"}/>

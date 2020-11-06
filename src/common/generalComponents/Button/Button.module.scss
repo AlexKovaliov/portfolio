@@ -17,5 +17,10 @@
     color: $bgSecondColor;
     cursor: pointer;
     text-transform: uppercase;
+    &:hover {
+      transition: ease 0.4s;
+      background-color: $hoverColor;
+      color: $buttonColor;
+    }
   }
 }

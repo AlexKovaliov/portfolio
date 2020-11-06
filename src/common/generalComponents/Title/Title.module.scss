@@ -30,8 +30,43 @@
     width: 77px;
     background: $lineAndBorderColor;
     height: 2px;
-    bottom: -5px;
+    bottom: -6px;
     left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.titleLeftLine {
+  margin: 0 0 60px;
+  position: relative;
+
+  & h2 {
+    @include fonts ($fontTitle, 32px, 700);
+    color: $textColor;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  & ::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    background: $lineAndBorderColor;
+    height: 2px;
+    bottom: -9px;
+    left: 23px;
+    transform: translate(-50%, 50%);
+  }
+
+  & ::before {
+    content: "";
+    position: absolute;
+    width: 77px;
+    background: $lineAndBorderColor;
+    height: 2px;
+    bottom: -15px;
+    left: 39px;
     transform: translate(-50%, 50%);
   }
 }

@@ -13,7 +13,7 @@ export function ContactsBlock() {
         <div className={`${styleContainer.container} ${s.contactsContainer}`}>
             <div className={s.contactsBlock}>
                 <div className={s.infoWrapper}>
-                    <Title text={"Get in touch"}/>
+                    <Title isLeft={false} text={"Get in touch"}/>
                     <div className={s.icon}>
                         <PhoneInTalkIcon/>
                     </div>
