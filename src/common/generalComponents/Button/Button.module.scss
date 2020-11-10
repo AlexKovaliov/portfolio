@@ -3,24 +3,32 @@
 
 .cover {
   padding-top: 30px;
-  padding-left: 20px;
   padding-bottom: 3%;
 
-  & button {
+  button {
     @include fonts($fontTitle, 14px, 600);
     background-color: $buttonColor;
+    position: relative;
     border: 0 none;
+    overflow: hidden;
     border-radius: 5px;
     height: 47px;
     line-height: 50px;
     padding: 0 30px;
     color: $bgSecondColor;
     cursor: pointer;
+    transition: 0.8s;
     text-transform: uppercase;
+
     &:hover {
       transition: ease 0.4s;
       background-color: $hoverColor;
       color: $buttonColor;
     }
+  }
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -41,7 +41,7 @@ export function SkillsBlock() {
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <Title isLeft={true} text={"Skills"}/>
+                <Title isLineLeft={true} text={"Skills"}/>
                 <div className={s.skills}>
 
                     <Skill title={"HTML, CSS"}

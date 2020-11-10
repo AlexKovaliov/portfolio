@@ -3,12 +3,12 @@ import s from './Title.module.scss'
 
 type TitlePropsType = {
     text: string
-    isLeft: boolean
+    isLineLeft: boolean
 }
 
 export function Title(props: TitlePropsType) {
 
-    return (props.isLeft ?
+    return (props.isLineLeft ?
             <div className={s.title}>
                 <h2>{props.text}</h2>
             </div> :

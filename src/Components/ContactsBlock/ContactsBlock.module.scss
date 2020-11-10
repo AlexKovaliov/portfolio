@@ -5,6 +5,7 @@
   width: 100%;
   background-color: $bgSecondColor;
   justify-content: center;
+  flex-wrap: wrap;
 
   .contactsBlock {
     flex-direction: column;
@@ -13,6 +14,7 @@
     width: 70%;
     flex-wrap: wrap;
     align-items: center;
+
 
     .form {
       display: flex;
@@ -51,12 +53,14 @@
         width: 47px;
         color: $lineAndBorderColor;
       }
-
     }
 
     .form {
       display: flex;
+      align-items: flex-start;
       flex-wrap: wrap;
+      padding-top: 70px;
+      padding-left: 80px;
 
       .emailRow {
         width: 80%;
@@ -85,7 +89,7 @@
             @include fonts($fontText, 14px, 400);
             width: 100%;
             line-height: 26px;
-            color: #b3b3b3;
+            color: $lineAndBorderColor;
             border: none;
             border-bottom: 1px solid $lineAndBorderColor;
             padding: 5px 0;
@@ -95,8 +99,8 @@
 
       .areaCover {
         padding-top: 40px;
-        padding-left: 95px;
         width: 90%;
+        height: 50%;
 
         .area {
           padding-top: 5px;
@@ -106,10 +110,38 @@
           resize: none;
           border-color: $lineAndBorderColor;
           @include fonts($fontText, 14px, 400);
+        }
 
+        @media screen and (max-width: 1029px) {
+          display: flex;
+          justify-content: flex-start;
         }
       }
+
+      @media screen and (max-width: 1029px) {
+        padding-top: 70px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
     }
+
+    @media screen and (max-width: 1029px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 70%;
+    }
+  }
+
+  @media screen and (max-width: 1029px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
   }
 }
 

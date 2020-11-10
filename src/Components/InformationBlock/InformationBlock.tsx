@@ -11,7 +11,7 @@ export function InformationBlock() {
     return (
         <div className={s.informationBlock}>
             <div className={`${styleContainer.container} ${s.containerInfo}`}>
-                <Title isLeft={true} text={"About me"}/>
+                <Title isLineLeft={true} text={"About me"}/>
                 <div className={s.infoWrapper}>
                     <div className={s.presentation}>
                         <h3>Hi!</h3>

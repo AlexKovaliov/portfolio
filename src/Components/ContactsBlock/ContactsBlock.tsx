@@ -13,7 +13,7 @@ export function ContactsBlock() {
         <div className={`${styleContainer.container} ${s.contactsContainer}`}>
             <div className={s.contactsBlock}>
                 <div className={s.infoWrapper}>
-                    <Title isLeft={false} text={"Get in touch"}/>
+                    <Title isLineLeft={false} text={"Get in touch"}/>
                     <div className={s.icon}>
                         <PhoneInTalkIcon/>
                     </div>
@@ -37,11 +37,12 @@ export function ContactsBlock() {
                         </div>
                     </div>
 
-                        <div className={s.areaCover}>
-                            <textarea className={s.area} name="message" placeholder="Your Message"></textarea>
-                            <Button title={"Send"}/>
-                        </div>
+                    <div className={s.areaCover}>
+                        <textarea className={s.area} name="message" placeholder="Your Message"></textarea>
 
+                    </div>
+
+                    <Button title={"Send"}/>
 
                 </form>
 
