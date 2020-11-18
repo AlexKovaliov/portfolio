@@ -79,6 +79,10 @@
             border-bottom: 1px solid $lineAndBorderColor;
             padding: 5px 0;
           }
+          @media screen and (max-width: 1029px) {
+           padding-right: 0;
+            width: 100%;
+          }
         }
 
         .emailCover {
@@ -87,13 +91,25 @@
 
           .email {
             @include fonts($fontText, 14px, 400);
-            width: 100%;
+            width: 96%;
             line-height: 26px;
-            color: $lineAndBorderColor;
+            color: $textColor;
             border: none;
             border-bottom: 1px solid $lineAndBorderColor;
             padding: 5px 0;
+            @media screen and (max-width: 1029px) {
+              width: 100%;
+            }
           }
+          @media screen and (max-width: 1029px) {
+            padding-right: 0;
+            width: 100%;
+          }
+        }
+
+        @media screen and (max-width: 1029px) {
+          display: flex;
+          flex-direction: column;
         }
       }
 
@@ -110,11 +126,10 @@
           resize: none;
           border-color: $lineAndBorderColor;
           @include fonts($fontText, 14px, 400);
-        }
 
-        @media screen and (max-width: 1029px) {
-          display: flex;
-          justify-content: flex-start;
+          @media screen and (max-width: 1029px) {
+            width: 100%;
+          }
         }
       }
 
@@ -123,6 +138,8 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        padding-left: 0;
+        width: 100%;
       }
     }
 

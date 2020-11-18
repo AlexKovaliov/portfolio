@@ -17,13 +17,15 @@
     padding: 0 30px;
     color: $bgSecondColor;
     cursor: pointer;
-    transition: 0.8s;
+    transition:  0.8s;
     text-transform: uppercase;
 
     &:hover {
       transition: ease 0.4s;
+      font-size: 16px;
       background-color: $hoverColor;
       color: $buttonColor;
+      box-shadow: 0 0 7px $buttonColor;
     }
   }
   @media screen and (max-width: 700px) {

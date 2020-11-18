@@ -14,8 +14,8 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                {/*<Header/>*/}
-                 <WelcomeBlock/>
+                <Header/>
+                <WelcomeBlock/>
                 <InformationBlock/>
                 <SkillsBlock/>
                 <WorksBlock/>

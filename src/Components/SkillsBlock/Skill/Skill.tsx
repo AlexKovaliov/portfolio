@@ -5,14 +5,11 @@ import s from './Skill.module.scss'
 export type SkillType = {
     title: string
     description: string
-    //style: any
     icon: { backgroundImage: string}
 }
 
 
 export function Skill(props: SkillType) {
-
-
 
     return (
         <div className={s.skill}>

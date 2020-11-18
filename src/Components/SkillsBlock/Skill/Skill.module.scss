@@ -16,7 +16,6 @@
     width: 70px;
     height: 70px;
     margin-top: 5%;
-    //background-color: #ffc107;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,6 +38,9 @@
     line-height: 24px;
     color: $textSecondColor;
     margin: 0;
+  }
+  &:hover {
+    box-shadow: 0 0 7px $lineAndBorderColor;
   }
 }
 
