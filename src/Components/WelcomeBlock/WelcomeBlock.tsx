@@ -1,8 +1,7 @@
 import React from 'react';
 import s from './WelcomeBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
-
-
+import {Zoom} from "react-awesome-reveal";
 
 
 export function WelcomeBlock() {
@@ -14,7 +13,9 @@ export function WelcomeBlock() {
                     <h1>Alexander Kovaliov</h1>
                     <p>I am a Front-end Developer</p>
                 </div>
-                <div className={s.photo}>--Here will be img--</div>
+                <Zoom>
+                    <div className={s.photo}>--Here will be img--</div>
+                </Zoom>
             </div>
         </div>
     )

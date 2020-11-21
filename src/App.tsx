@@ -9,6 +9,8 @@ import {ContactsBlock} from "./Components/ContactsBlock/ContactsBlock";
 import {FooterBlock} from "./Components/FooterBlock/FooterBlock";
 import {InformationBlock} from './Components/InformationBlock/InformationBlock';
 import {BrowserRouter} from "react-router-dom"
+import {Fade} from 'react-awesome-reveal';
+
 
 function App() {
     return (
@@ -16,12 +18,16 @@ function App() {
             <div className="App">
                 <Header/>
                 <WelcomeBlock/>
-                <InformationBlock/>
+                <Fade>
+                    <InformationBlock/>
+                </Fade>
                 <SkillsBlock/>
                 <WorksBlock/>
-                <RemoteWorkBlock/>
-                <ContactsBlock/>
-                <FooterBlock/>
+                <Fade>
+                    <RemoteWorkBlock/>
+                    <ContactsBlock/>
+                    <FooterBlock/>
+                </Fade>
             </div>
         </BrowserRouter>
     )

@@ -9,6 +9,7 @@ import iRedux from "../../assets/iconsFonts/redux.svg"
 import iTS from "../../assets/iconsFonts/typescript.svg"
 import iAxios from "../../assets/iconsFonts/axios.svg"
 import iSB from "../../assets/iconsFonts/storybook.svg"
+import {Fade, Slide} from "react-awesome-reveal";
 
 
 export function SkillsBlock() {
@@ -44,33 +45,47 @@ export function SkillsBlock() {
                 <Title isLineLeft={true} text={"Skills"}/>
                 <div className={s.skills}>
 
-                    <Skill title={"HTML, CSS"}
-                           description={"web make-up, scss, variables, mixins"}
-                           icon={iconHtml}
-                    />
+                    <Slide direction="left">
+                        <Skill title={"HTML, CSS"}
+                               description={"web make-up, scss, variables, mixins"}
+                               icon={iconHtml}
+                        />
+                    </Slide>
 
-                    <Skill title={"React"}
-                           description={"textfd fdas bsgdh sb svb zcgbadeg b zcxvb adsrgq edbzxcbv adsrg"}
-                           icon={iconReact}
-                    />
+                    <Fade>
+                        <Skill title={"React"}
+                               description={"textfd fdas bsgdh sb svb zcgbadeg b zcxvb adsrgq edbzxcbv adsrg"}
+                               icon={iconReact}
+                        />
+                    </Fade>
 
-                    <Skill title={"Redux"}
-                           description={"text"}
-                           icon={iconRedux}
-                    />
+                    <Slide direction="right">
+                        <Skill title={"Redux"}
+                               description={"text"}
+                               icon={iconRedux}
+                        />
+                    </Slide>
 
-                    <Skill title={"TypeScript"}
-                           description={"text"}
-                           icon={iconTS}
-                    />
-                    <Skill title={"Axios"}
-                           description={"text"}
-                           icon={iconAxios}
-                    />
-                    <Skill title={"StoryBook"}
-                           description={"text"}
-                           icon={iconSB}
-                    />
+                    <Slide direction="left">
+                        <Skill title={"TypeScript"}
+                               description={"text"}
+                               icon={iconTS}
+                        />
+                    </Slide>
+
+                    <Fade>
+                        <Skill title={"Axios"}
+                               description={"text"}
+                               icon={iconAxios}
+                        />
+                    </Fade>
+
+                    <Slide direction="right">
+                        <Skill title={"StoryBook"}
+                               description={"text"}
+                               icon={iconSB}
+                        />
+                    </Slide>
                 </div>
             </div>
         </div>

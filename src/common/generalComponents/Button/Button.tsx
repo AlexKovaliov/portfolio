@@ -5,7 +5,7 @@ type ButtonPropsType = {
     title: string
 }
 
-export function Button (props:ButtonPropsType) {
+export function Button(props: ButtonPropsType) {
     return (
         <div className={s.cover}>
             <button>{props.title}</button>
