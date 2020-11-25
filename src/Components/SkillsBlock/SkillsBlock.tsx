@@ -9,7 +9,7 @@ import iRedux from "../../assets/iconsFonts/redux.svg"
 import iTS from "../../assets/iconsFonts/typescript.svg"
 import iAxios from "../../assets/iconsFonts/axios.svg"
 import iSB from "../../assets/iconsFonts/storybook.svg"
-import {Fade, Slide} from "react-awesome-reveal";
+import {Zoom, Slide} from "react-awesome-reveal";
 
 
 export function SkillsBlock() {
@@ -52,12 +52,12 @@ export function SkillsBlock() {
                         />
                     </Slide>
 
-                    <Fade>
+                    <Zoom>
                         <Skill title={"React"}
                                description={"textfd fdas bsgdh sb svb zcgbadeg b zcxvb adsrgq edbzxcbv adsrg"}
                                icon={iconReact}
                         />
-                    </Fade>
+                    </Zoom>
 
                     <Slide direction="right">
                         <Skill title={"Redux"}
@@ -73,12 +73,12 @@ export function SkillsBlock() {
                         />
                     </Slide>
 
-                    <Fade>
+                    <Zoom>
                         <Skill title={"Axios"}
                                description={"text"}
                                icon={iconAxios}
                         />
-                    </Fade>
+                    </Zoom>
 
                     <Slide direction="right">
                         <Skill title={"StoryBook"}

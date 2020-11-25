@@ -1,8 +1,7 @@
 import React from 'react';
 import s from './WelcomeBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
-import {Zoom} from "react-awesome-reveal";
-
+import Tilt from 'react-parallax-tilt';
 
 export function WelcomeBlock() {
     return (
@@ -13,9 +12,11 @@ export function WelcomeBlock() {
                     <h1>Alexander Kovaliov</h1>
                     <p>I am a Front-end Developer</p>
                 </div>
-                <Zoom>
+
+                <Tilt>
                     <div className={s.photo}>--Here will be img--</div>
-                </Zoom>
+                </Tilt>
+
             </div>
         </div>
     )

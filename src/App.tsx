@@ -9,7 +9,6 @@ import {ContactsBlock} from "./Components/ContactsBlock/ContactsBlock";
 import {FooterBlock} from "./Components/FooterBlock/FooterBlock";
 import {InformationBlock} from './Components/InformationBlock/InformationBlock';
 import {BrowserRouter} from "react-router-dom"
-import {Fade} from 'react-awesome-reveal';
 
 
 function App() {
@@ -18,16 +17,12 @@ function App() {
             <div className="App">
                 <Header/>
                 <WelcomeBlock/>
-                <Fade>
-                    <InformationBlock/>
-                </Fade>
+                <InformationBlock/>
                 <SkillsBlock/>
                 <WorksBlock/>
-                <Fade>
-                    <RemoteWorkBlock/>
-                    <ContactsBlock/>
-                    <FooterBlock/>
-                </Fade>
+                <RemoteWorkBlock/>
+                <ContactsBlock/>
+                <FooterBlock/>
             </div>
         </BrowserRouter>
     )

@@ -5,7 +5,7 @@ import {Work} from "./Work/Work";
 import {Title} from "../../common/generalComponents/Title/Title";
 import toDo from "../../assets/img/to_do_list_img.jpg";
 import social from "../../assets/img/socil-img.jpg";
-import {Slide} from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 
 export function WorksBlock() {
 
@@ -24,19 +24,19 @@ export function WorksBlock() {
                 <Title isLineLeft={true} text={"My works"}/>
                 <div className={s.works}>
 
-                    <Slide direction="left">
+                    <Zoom>
                         <Work title={"Social network"}
                               description={"Short description"}
                               img={imgSocial}
                         />
-                    </Slide>
+                    </Zoom>
 
-                    <Slide direction="right">
+                    <Zoom>
                         <Work title={"To do lists"}
                               description={"Short description"}
                               img={imgToDo}
                         />
-                    </Slide>
+                    </Zoom>
                 </div>
             </div>
 
