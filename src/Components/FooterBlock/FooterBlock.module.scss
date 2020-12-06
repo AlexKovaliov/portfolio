@@ -25,6 +25,11 @@
         color: $textSecondColor;
         margin: 0 10px;
         padding-right: 15px;
+        text-decoration: none;
+
+        &:hover {
+          color: $hoverColor;
+        }
       }
     }
 

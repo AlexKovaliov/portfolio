@@ -40,7 +40,7 @@ export function Nav() {
                 to="contacts"
                 spy={true}
                 smooth={true}
-                offset={-90}
+                offset={-40}
                 duration={500}
             >Contacts</Link>
         </div>
