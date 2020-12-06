@@ -5,9 +5,10 @@ import Tilt from 'react-parallax-tilt';
 
 export function WelcomeBlock() {
     return (
-        <div className={s.welcomeBlock}>
+        <div id="main" className={s.welcomeBlock}>
             <div className={styleContainer.container}>
                 <div className={s.presentation}>
+                    <p style={{color: "red"}}>On development stage</p>
                     <h5>Hello, my name is</h5>
                     <h1>Alexander Kovaliov</h1>
                     <p>I am a Front-end Developer</p>

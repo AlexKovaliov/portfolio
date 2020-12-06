@@ -18,8 +18,7 @@ export function WorksBlock() {
     }
 
     return (
-        <div className={s.worksBlock}>
-            x
+        <div id="works" className={s.worksBlock}>
             <div className={`${styleContainer.container} ${s.worksContainer}`}>
                 <Title isLineLeft={true} text={"My works"}/>
                 <div className={s.works}>

@@ -10,7 +10,7 @@ import EmailIcon from '@material-ui/icons/Email';
 
 export function ContactsBlock() {
     return (
-        <div className={`${styleContainer.container} ${s.contactsContainer}`}>
+        <div id="contacts" className={`${styleContainer.container} ${s.contactsContainer}`}>
             <div className={s.contactsBlock}>
 
                 <div className={s.infoWrapper}>

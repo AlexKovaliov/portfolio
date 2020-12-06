@@ -6,10 +6,10 @@ export function Nav() {
 
     return (
         <div className={s.nav}>
-            <a>Main</a>
-            <a>Skills</a>
-            <a>Works</a>
-            <a>Contacts</a>
+            <a href="#main">Main</a>
+            <a href="#skills">Skills</a>
+            <a href="#works">Works</a>
+            <a href="#contacts">Contacts</a>
         </div>
     )
 }
