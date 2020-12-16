@@ -47,42 +47,43 @@ export function SkillsBlock() {
 
                     <Slide direction="left">
                         <Skill title={"HTML, CSS"}
-                               description={"web make-up, scss, variables, mixins"}
+                               description={"HTML is a markup language for creating a webpage." +
+                               "CSS it is a style sheet language used to describe the appearance of a document."}
                                icon={iconHtml}
                         />
                     </Slide>
 
                     <Zoom>
                         <Skill title={"React"}
-                               description={"textfd fdas bsgdh sb svb zcgbadeg b zcxvb adsrgq edbzxcbv adsrg"}
+                               description={"A JavaScript library for building user interfaces"}
                                icon={iconReact}
                         />
                     </Zoom>
 
                     <Slide direction="right">
                         <Skill title={"Redux"}
-                               description={"text"}
+                               description={"A Predictable State Container for JS Apps"}
                                icon={iconRedux}
                         />
                     </Slide>
 
                     <Slide direction="left">
                         <Skill title={"TypeScript"}
-                               description={"text"}
+                               description={"TypeScript is an open-source language which builds on JavaScript, one of the world’s most used tools, by adding static type definitions."}
                                icon={iconTS}
                         />
                     </Slide>
 
                     <Zoom>
                         <Skill title={"Axios"}
-                               description={"text"}
+                               description={"Axios is one of the most popular HTTP clients for browsers and promises-based node.js."}
                                icon={iconAxios}
                         />
                     </Zoom>
 
                     <Slide direction="right">
                         <Skill title={"StoryBook"}
-                               description={"text"}
+                               description={"Storybook is an open source tool for developing UI components in isolation for React, Vue, Angular, and more."}
                                icon={iconSB}
                         />
                     </Slide>

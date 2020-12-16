@@ -33,10 +33,16 @@
       }
     }
 
-    & p {
+    & p, a {
       @include fonts($fontText, 14px, 400);
       color: $textSecondColor;
       line-height: 24px;
+      text-decoration: none;
+      & a:hover  {
+        color: $hoverColor;
+        scroll-behavior: smooth;
+        cursor: pointer;
+      }
     }
   }
 }

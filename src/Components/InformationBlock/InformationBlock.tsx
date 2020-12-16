@@ -9,7 +9,7 @@ import {Fade} from 'react-awesome-reveal';
 
 export function InformationBlock() {
     return (
-        <div className={s.informationBlock}>
+        <div id="info" className={s.informationBlock}>
             <div className={`${styleContainer.container} ${s.containerInfo}`}>
                 <Title isLineLeft={true} text={"About me"}/>
                 <Fade>
