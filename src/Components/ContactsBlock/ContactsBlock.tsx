@@ -40,7 +40,6 @@ export function ContactsBlock() {
 
                     <div className={s.areaCover}>
                         <textarea className={s.area} name="message" placeholder="Your Message"></textarea>
-
                     </div>
 
                     <Button title={"Send"}/>

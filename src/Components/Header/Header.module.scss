@@ -8,6 +8,7 @@
   width: 100%;
   position: fixed;
   background-color: $bgColor;
+  z-index: 10;
   @media screen and (max-width: 380px) {
     justify-content: center;
   }

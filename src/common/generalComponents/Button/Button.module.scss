@@ -2,13 +2,11 @@
 @import 'src/common/sass/mixins';
 
 .cover {
-  padding-top: 30px;
-  padding-bottom: 3%;
-
   button {
     @include fonts($fontTitle, 14px, 600);
     background-color: $buttonColor;
     position: relative;
+    width: max-content;
     border: 0 none;
     overflow: hidden;
     border-radius: 5px;
@@ -17,7 +15,7 @@
     padding: 0 30px;
     color: $bgSecondColor;
     cursor: pointer;
-    transition:  0.8s;
+    transition: 0.8s;
     text-transform: uppercase;
 
     &:hover {
@@ -28,6 +26,7 @@
       box-shadow: 0 0 7px $buttonColor;
     }
   }
+
   @media screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;

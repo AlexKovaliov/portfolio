@@ -3,7 +3,7 @@ import styleContainer from "../../common/styles/Container.module.css";
 import s from "../WorksBlock/WorksBlock.module.scss";
 import {Work} from "./Work/Work";
 import {Title} from "../../common/generalComponents/Title/Title";
-import toDo from "../../assets/img/to_do_list_img.jpg";
+import toDo from "../../assets/img/ToDoList.png";
 import social from "../../assets/img/socil-img.jpg";
 import {Zoom} from "react-awesome-reveal";
 
@@ -32,7 +32,7 @@ export function WorksBlock() {
 
                     <Zoom>
                         <Work title={"To do lists"}
-                              description={"Short description"}
+                              description={"The to-do list is designed to help you plan your tasks to maximize your efficiency."}
                               img={imgToDo}
                         />
                     </Zoom>

@@ -9,6 +9,7 @@ import {ContactsBlock} from "./Components/ContactsBlock/ContactsBlock";
 import {FooterBlock} from "./Components/FooterBlock/FooterBlock";
 import {InformationBlock} from './Components/InformationBlock/InformationBlock';
 import {BrowserRouter} from "react-router-dom"
+import {Contact} from "./Components/contact/contact";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 <WorksBlock/>
                 <RemoteWorkBlock/>
                 <ContactsBlock/>
+                <Contact/>
                 <FooterBlock/>
             </div>
         </BrowserRouter>
