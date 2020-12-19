@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Header.module.scss'
+import s from './Header.module.sass'
 import {Nav} from "./Nav/Nav";
 import {BurgerNav} from "./BurgerNav/BurgerNav";
 

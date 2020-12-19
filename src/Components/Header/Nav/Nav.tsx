@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Nav.module.scss'
+import s from './Nav.module.sass'
 import {Link} from 'react-scroll';
 
 
@@ -7,10 +7,6 @@ export function Nav() {
 
     return (
         <div className={s.nav}>
-            {/*<a href="#main">Main</a>*/}
-            {/* <a href="#skills">Skills</a>
-            <a href="#works">Works</a>
-            <a href="#contacts">Contacts</a>*/}
             <Link
                 activeClass={s.active}
                 to="main"
