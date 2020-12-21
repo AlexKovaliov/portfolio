@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './RemoteWorkBlock.module.scss'
+import s from './RemoteWorkBlock.module.sass'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Button} from "../../common/generalComponents/Button/Button";
 import {Fade} from 'react-awesome-reveal';

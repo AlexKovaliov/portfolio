@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './WelcomeBlock.module.scss'
+import s from './WelcomeBlock.module.sass'
 import styleContainer from '../../common/styles/Container.module.css'
 import Tilt from 'react-parallax-tilt';
 

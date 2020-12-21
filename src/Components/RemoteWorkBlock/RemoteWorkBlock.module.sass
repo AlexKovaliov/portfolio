@@ -1,0 +1,29 @@
+@import '../../common/sass/variables'
+@import '../../common/sass/mixins'
+
+*
+  margin: 0
+  padding: 0
+
+.remoteContainer
+  background-color: $bgColor
+  width: 100%
+  display: flex
+  justify-content: center
+
+  .cover
+    display: flex
+    flex-direction: column
+    max-width: 1200px
+    width: 100%
+    flex-wrap: wrap
+    text-align: center
+
+    .content
+      padding: 40px 0
+
+      & h3
+        @include fonts($fontText, 18px, 500)
+        padding-bottom: 20px
+        line-height: 24px
+        color: $textSecondColor
