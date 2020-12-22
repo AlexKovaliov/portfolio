@@ -1,12 +1,11 @@
 import React from 'react';
 import s from './WelcomeBlock.module.sass'
-import styleContainer from '../../common/styles/Container.module.css'
 import Tilt from 'react-parallax-tilt';
 
 export function WelcomeBlock() {
     return (
-        <div id="main" className={s.welcomeBlock}>
-            <div className={styleContainer.container}>
+        <div id="main" className={s.container}>
+            <div className={s.welcomeBlock}>
                 <div className={s.presentation}>
                     <p style={{color: "red"}}>On development stage</p>
                     <h5>Hello, my name is</h5>

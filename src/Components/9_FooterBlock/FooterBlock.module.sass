@@ -1,0 +1,58 @@
+@import '../../common/sass/variables'
+@import '../../common/sass/mixins'
+
+*
+  margin: 0
+  padding: 0
+
+
+.footerContainer
+  display: flex
+  justify-content: center
+  width: 100%
+  padding: 30px 0
+  flex-wrap: wrap
+  background-color: $bgColor
+
+  .content
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    max-width: 1200px
+
+    .links
+      padding-bottom: 10px
+
+      & a
+        @include fonts($fontText, 16px, 500)
+        line-height: 24px
+        color: $textSecondColor
+        margin: 0 10px
+        text-decoration: none
+
+        &:hover
+          color: $hoverColor
+
+
+    & p, a
+      @include fonts($fontText, 14px, 400)
+      color: $textSecondColor
+      line-height: 24px
+      text-decoration: none
+
+      & a:hover
+        color: $hoverColor
+        scroll-behavior: smooth
+        cursor: pointer
+
+
+
+
+
+
+
+
+
+
+

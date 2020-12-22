@@ -1,5 +1,5 @@
-import React from 'react'
-import s from './Info.module.scss'
+import React from "react"
+import s from "./Info.module.scss"
 
 type InfoPropsType = {
     InfoTitle: string

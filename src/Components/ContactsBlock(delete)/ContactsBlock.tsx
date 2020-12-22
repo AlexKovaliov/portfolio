@@ -3,9 +3,7 @@ import s from './ContactsBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Title} from "../../common/generalComponents/Title/Title";
 import {Button} from "../../common/generalComponents/Button/Button";
-import {Info} from "../InformationBlock/Info/Info";
-import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
-import EmailIcon from '@material-ui/icons/Email';
+import {Info} from "../3_InformationBlock/Info/Info";
 
 
 export function ContactsBlock() {
@@ -16,13 +14,13 @@ export function ContactsBlock() {
                 <div className={s.infoWrapper}>
                     <Title isLineLeft={false} text={"Get in touch"}/>
                     <div className={s.icon}>
-                        <PhoneInTalkIcon/>
+
                     </div>
                     <Info InfoTitle={"Phone number"}
                           InfoData={"+375 33 626 05 89"}/>
                     <hr className={s.line}/>
                     <div className={s.icon}>
-                        <EmailIcon/>
+
                     </div>
                     <Info InfoTitle={"Email"}
                           InfoData={"lawsansana@gmail.com"}/>

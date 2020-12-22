@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import {Header} from './Components/Header/Header';
-import {WelcomeBlock} from "./Components/WelcomeBlock/WelcomeBlock";
-import {SkillsBlock} from "./Components/SkillsBlock/SkillsBlock";
-import {WorksBlock} from "./Components/WorksBlock/WorksBlock";
-import {RemoteWorkBlock} from "./Components/RemoteWorkBlock/RemoteWorkBlock";
-import {ContactsBlock} from "./Components/ContactsBlock/ContactsBlock";
-import {FooterBlock} from "./Components/FooterBlock/FooterBlock";
-import {InformationBlock} from './Components/InformationBlock/InformationBlock';
-import {BrowserRouter} from "react-router-dom"
-import {Contact} from "./Components/contact/contact";
+import {WelcomeBlock} from "./Components/2_WelcomeBlock/WelcomeBlock";
+import {BrowserRouter} from "react-router-dom";
+import {Header} from './Components/1_HeaderBlock/Header';
+import {InformationBlock} from "./Components/3_InformationBlock/InformationBlock";
+import {SkillsBlock} from "./Components/4_SkillsBlock/SkillsBlock";
+import {RemoteWorkBlock} from "./Components/6_RemoteWorkBlock/RemoteWorkBlock";
+import {Contact} from "./Components/7_ContactBlock/contact";
+import {FooterBlock} from './Components/9_FooterBlock/FooterBlock';
+import {WorksBlock} from "./Components/5_WorksBlock/WorksBlock";
 
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
                 <SkillsBlock/>
                 <WorksBlock/>
                 <RemoteWorkBlock/>
-                <ContactsBlock/>
                 <Contact/>
                 <FooterBlock/>
             </div>

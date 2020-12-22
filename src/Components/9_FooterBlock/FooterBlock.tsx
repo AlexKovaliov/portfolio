@@ -1,5 +1,5 @@
 import React from "react";
-import s from './FooterBlock.module.scss'
+import s from './FooterBlock.module.sass'
 import styleContainer from "../../common/styles/Container.module.css";
 import {Link} from "react-scroll";
 

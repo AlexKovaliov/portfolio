@@ -1,10 +1,10 @@
 import React from 'react';
-import {Title} from "../../common/generalComponents/Title/Title";
 import s from "./InformationBlock.module.scss"
 import styleContainer from "../../common/styles/Container.module.css";
+import {Fade} from 'react-awesome-reveal';
 import {Info} from "./Info/Info";
 import {Button} from "../../common/generalComponents/Button/Button";
-import {Fade} from 'react-awesome-reveal';
+import {Title} from "../../common/generalComponents/Title/Title";
 
 
 export function InformationBlock() {
