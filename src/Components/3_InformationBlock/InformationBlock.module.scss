@@ -1,48 +1,65 @@
 @import '../../common/sass/variables';
 @import '../../common/sass/mixins';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .informationBlock {
-  min-height: 60vh;
-  background-color: $bgSecondColor;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   .containerInfo {
+    max-width: 1200px;
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 
     .infoWrapper {
       align-self: stretch;
       display: flex;
       justify-content: space-between;
 
+
       .presentation {
         @include fonts($fontText, 16px, 400);
-        height: 95%;
-        width: 60%;
         line-height: 24px;
         color: $textSecondColor;
-        padding-left: 5px;
-        padding-right: 25px;
+        max-width: 50%;
         flex-wrap: wrap;
 
-        & h3 {
-          @include fonts($fontTitle, 18px, 600);
-          color: $textSecondColor;
+        & h2 {
+          @include fonts($fontTitle, 22px, 600);
+          color: $textColor;
           letter-spacing: 1px;
-          margin: 0 0 15px;
-          text-transform: uppercase;
+          text-transform: capitalize;
           flex-wrap: wrap;
         }
+
+        & p {
+          padding: 27px 0;
+        }
+
         @media screen and (max-width: 1029px) {
           width: 100%;
         }
       }
 
       .column {
-        width: 25%;
-        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0;
 
         .line {
           @include line;
         }
+
         @media screen and (max-width: 680px) {
           width: 100%;
           display: flex;

@@ -1,25 +1,27 @@
 @import '../../../common/sass/variables';
 @import '../../../common/sass/mixins';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .info {
   color: $textColor;
   display: flex;
-  flex-direction: column;
-  align-items: self-start;
 
   .infoTitle {
-    @include fonts($fontTitle, 16px, 500);
-    text-transform: uppercase;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    margin-top: 19px;
+    @include fonts($fontTitle, 20px, 600);
+    color: $textColor;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 0 15px;
   }
 
   .infoData {
-    @include fonts($fontText, 14px, 400);
-    line-height: 24px;
+    @include fonts($fontText, 16px, 400);
+    line-height: 28px;
     color: $textSecondColor;
-    margin: 0;
   }
 }
 

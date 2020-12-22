@@ -7,8 +7,8 @@
 }
 
 @mixin line() {
-  width: 50px;
-  margin: 15px 0;
+  width: 100px;
   border: 0;
+  padding: 10px 0;
   border-top: 2px solid $lineAndBorderColor;
 }

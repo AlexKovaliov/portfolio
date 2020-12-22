@@ -8,7 +8,7 @@ import {Title} from "../../common/generalComponents/Title/Title";
 
 export const Contact = () => {
     return (
-        <div className={s.container}>
+        <div id="contacts" className={s.container}>
             <div className={s.contact}>
                 <Title isLineLeft={false} text={"Get in touch"}/>
                 <div className={s.content}>
