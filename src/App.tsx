@@ -9,6 +9,7 @@ import {RemoteWorkBlock} from "./Components/6_RemoteWorkBlock/RemoteWorkBlock";
 import {Contact} from "./Components/7_ContactBlock/contact";
 import {FooterBlock} from './Components/9_FooterBlock/FooterBlock';
 import {WorksBlock} from "./Components/5_WorksBlock/WorksBlock";
+import {Modal} from "./Components/3_InformationBlock/Modal/Modal";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <RemoteWorkBlock/>
                 <Contact/>
                 <FooterBlock/>
+                <Modal/>
             </div>
         </BrowserRouter>
     )

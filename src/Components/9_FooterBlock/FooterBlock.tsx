@@ -1,13 +1,12 @@
 import React from "react";
 import s from './FooterBlock.module.sass'
-import styleContainer from "../../common/styles/Container.module.css";
 import {Link} from "react-scroll";
 
 
 export function FooterBlock() {
 
     return (
-        <div id="footer" className={`${styleContainer.container} ${s.footerContainer}`}>
+        <div id="footer" className={s.footerContainer}>
             <div className={s.content}>
                 <div className={s.links}>
                     <a target="blank" href="https://www.linkedin.com/in/alexander-kovalev-018ba51b2/">LinkedIn</a>

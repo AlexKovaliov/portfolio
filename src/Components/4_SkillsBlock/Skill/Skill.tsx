@@ -21,4 +21,4 @@ export function Skill(props: SkillType) {
             </span>
         </div>
     )
-}{/*style={props.style}*/}
+}
