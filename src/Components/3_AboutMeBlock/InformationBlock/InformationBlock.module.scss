@@ -1,5 +1,5 @@
-@import '../../common/sass/variables';
-@import '../../common/sass/mixins';
+@import '../../../common/sass/variables';
+@import '../../../common/sass/mixins';
 
 * {
   margin: 0;
@@ -73,6 +73,43 @@
         justify-content: center;
         flex-direction: column;
         padding-bottom: 2%;
+      }
+    }
+  }
+
+  .containerModal {
+    position: relative;
+    border: 2px solid $lineAndBorderColor;
+    box-shadow: 0 0 7px $lineAndBorderColor;
+    border-radius: 15px;
+    background-color: $bgColor;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    height: 100%;
+
+    .closeBtn {
+      z-index: 100;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      border: 2px solid $buttonColor;
+      border-radius: 15%;
+      width: 25px;
+      height: 25px;
+      background-size: 15px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &:hover {
+        transition: ease 0.4s;
+        background-size: 25px;
+        border: none;
+        cursor: pointer;
+        transform: rotate(90deg);
       }
     }
   }

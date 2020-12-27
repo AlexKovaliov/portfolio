@@ -3,13 +3,12 @@ import './App.css';
 import {WelcomeBlock} from "./Components/2_WelcomeBlock/WelcomeBlock";
 import {BrowserRouter} from "react-router-dom";
 import {Header} from './Components/1_HeaderBlock/Header';
-import {InformationBlock} from "./Components/3_InformationBlock/InformationBlock";
 import {SkillsBlock} from "./Components/4_SkillsBlock/SkillsBlock";
 import {RemoteWorkBlock} from "./Components/6_RemoteWorkBlock/RemoteWorkBlock";
 import {Contact} from "./Components/7_ContactBlock/contact";
 import {FooterBlock} from './Components/9_FooterBlock/FooterBlock';
 import {WorksBlock} from "./Components/5_WorksBlock/WorksBlock";
-import {Modal} from "./Components/3_InformationBlock/Modal/Modal";
+import {InformationBlock} from "./Components/3_AboutMeBlock/InformationBlock/InformationBlock";
 
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
                 <RemoteWorkBlock/>
                 <Contact/>
                 <FooterBlock/>
-                <Modal/>
             </div>
         </BrowserRouter>
     )

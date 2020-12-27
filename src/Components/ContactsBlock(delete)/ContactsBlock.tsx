@@ -3,7 +3,7 @@ import s from './ContactsBlock.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Title} from "../../common/generalComponents/Title/Title";
 import {Button} from "../../common/generalComponents/Button/Button";
-import {Info} from "../3_InformationBlock/Info/Info";
+import {Info} from "../3_AboutMeBlock/InformationBlock/Info/Info";
 
 
 export function ContactsBlock() {

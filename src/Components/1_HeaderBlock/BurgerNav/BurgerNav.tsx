@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import s from './BurgerNav.module.scss'
 import {Link} from 'react-scroll';
+//images
 import iMenu from "../../../assets/iconsFonts/menu.svg"
 
 export function BurgerNav() {

@@ -4,7 +4,7 @@ import {Button} from "../../../common/generalComponents/Button/Button";
 //images
 import img_eng_cv from "../../../assets/img/img_eng_cv.jpg"
 import img_rus_cv from "../../../assets/img/img_rus_cv.jpg"
-import closeBtn from "../../../assets/iconsFonts/close.svg"
+import {Zoom} from 'react-awesome-reveal';
 
 
 export function Modal() {
@@ -17,15 +17,9 @@ export function Modal() {
         backgroundImage: `url(${img_rus_cv})`
     }
 
-    const cBtn = {
-        backgroundImage: `url(${closeBtn})`
-    }
 
     return (
-        <div className={s.container}>
-
-            <div className={s.closeBtn} style={cBtn}></div>
-
+        <Zoom className={s.fade}>
             <div className={s.modal}>
                 <div className={s.cover}>
                     <div className={s.imgCv} style={imgRusCv}>
@@ -39,7 +33,6 @@ export function Modal() {
                     </div>
                 </div>
             </div>
-
-        </div>
+        </Zoom>
     )
 }
