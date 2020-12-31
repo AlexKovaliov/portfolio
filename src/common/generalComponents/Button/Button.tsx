@@ -9,7 +9,7 @@ type ButtonPropsType = {
 export function Button(props: ButtonPropsType) {
     return (
         <div className={s.cover}>
-            <button>{props.title}</button>
+            <button onClick={props.onClick}>{props.title}</button>
         </div>
     )
 }

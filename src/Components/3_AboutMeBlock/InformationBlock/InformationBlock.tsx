@@ -23,34 +23,32 @@ export function InformationBlock() {
     return (
 
         <div id="info" className={s.informationBlock}>
-            {modal ?
-                <div className={s.containerInfo}>
-                    <Title isLineLeft={true} text={"About me"}/>
-                    <Fade>
-                        <div className={s.infoWrapper}>
-                            <div className={s.presentation}>
-                                <h2>Hi!</h2>
-                                <p> I have been working as Frontend/React developer a half year.
-                                    I’m most passionate about developing new and interesting projects,
-                                    I'm hardworking and good a team player, so my goal is to work in a cool and
-                                    experienced
-                                    team. I study English and am constantly engaged in self-education.
-                                    Ready to relocation.</p>
+            <div className={s.containerInfo}>
+                <Title isLineLeft={true} text={"About me"}/>
+                <Fade>
+                    <div className={s.infoWrapper}>
+                        <div className={s.presentation}>
+                            <h2>Hi!</h2>
+                            <p> I have been working as Frontend/React developer a half year.
+                                I’m most passionate about developing new and interesting projects,
+                                I'm hardworking and good a team player, so my goal is to work in a cool and
+                                experienced
+                                team. I study English and am constantly engaged in self-education.
+                                Ready to relocation.</p>
 
-                                <Button title={"Download my CV"} onClick={onModal}/>
-                                <button onClick={onModal}>MODAL</button>
-                            </div>
-                            <div className={s.column}>
-                                <Info InfoTitle={"Name:"} InfoData={"Alexander Kovalev"}/>
-                                <Info InfoTitle={"Age:"} InfoData={"29 Yr"}/>
-                                <Info InfoTitle={"Birthday:"} InfoData={"2th january 1991"}/>
-                                <Info InfoTitle={"Location:"} InfoData={"Mogilev | Minsk"}/>
-                                <Info InfoTitle={"Language:"} InfoData={"Russian | English"}/>
-                            </div>
+                            <Button title={"Download my CV"} onClick={onModal}/>
                         </div>
-                    </Fade>
-                </div>
-                :
+                        <div className={s.column}>
+                            <Info InfoTitle={"Name:"} InfoData={"Alexander Kovalev"}/>
+                            <Info InfoTitle={"Age:"} InfoData={"29 Yr"}/>
+                            <Info InfoTitle={"Birthday:"} InfoData={"2th january 1991"}/>
+                            <Info InfoTitle={"Location:"} InfoData={"Mogilev | Minsk"}/>
+                            <Info InfoTitle={"Language:"} InfoData={"Russian | English"}/>
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+            {modal ? null :
                 <div className={s.containerModal}>
                     <div className={s.closeBtn} onClick={onModal} style={cBtn}></div>
                     <Modal/>
