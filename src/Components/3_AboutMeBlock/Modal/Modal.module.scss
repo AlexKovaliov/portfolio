@@ -28,6 +28,17 @@
       height: 400px;
       box-shadow: 0 0 7px $lineAndBorderColor;
       z-index: 100;
+
+      & a {
+        text-decoration: none;
+        cursor: pointer;
+        @include fonts($fontTitle, 16px, 500);
+        color: $textColor;
+
+        &:hover {
+          color: $hoverColor;
+        }
+      }
     }
 
     .imgCv {

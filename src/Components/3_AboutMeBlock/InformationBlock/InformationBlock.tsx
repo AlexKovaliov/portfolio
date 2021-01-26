@@ -40,7 +40,6 @@ export function InformationBlock() {
                         </div>
                         <div className={s.column}>
                             <Info InfoTitle={"Name:"} InfoData={"Alexander Kovalev"}/>
-                            <Info InfoTitle={"Age:"} InfoData={"29 Yr"}/>
                             <Info InfoTitle={"Birthday:"} InfoData={"2th january 1991"}/>
                             <Info InfoTitle={"Location:"} InfoData={"Mogilev | Minsk"}/>
                             <Info InfoTitle={"Language:"} InfoData={"Russian | English"}/>

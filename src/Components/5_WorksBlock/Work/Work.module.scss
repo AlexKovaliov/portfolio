@@ -18,7 +18,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
   }
 
   & h3 {
@@ -35,12 +39,31 @@
 
   &:hover {
     box-shadow: 0 0 7px $lineAndBorderColor;
-    opacity: 0.6;
   }
+
   @media screen and (max-width: 1124px) {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   &:hover {
+  }
+
+  a {
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    @include fonts($fontTitle, 15px, 500);
+    color: $textColor;
+
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+
+  .link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
