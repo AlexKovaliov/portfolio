@@ -1,9 +1,9 @@
 import React from 'react'
 import s from './Modal.module.scss'
+import {Zoom} from 'react-awesome-reveal';
 //images
 import img_eng_cv from "../../../assets/img/img_eng_cv.jpg"
 import img_rus_cv from "../../../assets/img/img_rus_cv.jpg"
-import {Zoom} from 'react-awesome-reveal';
 
 
 export function Modal() {

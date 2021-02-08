@@ -80,17 +80,11 @@
 
   .containerModal {
     position: absolute;
-    border: 2px solid $lineAndBorderColor;
-    box-shadow: 0 0 7px $lineAndBorderColor;
-    border-radius: 15px;
-    background-color: $bgColor;
-    max-width: 1200px;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-    height: 95%;
+    max-width: 1200px;
+    background-color: $bgSecondColor;
 
     .closeBtn {
       z-index: 100;

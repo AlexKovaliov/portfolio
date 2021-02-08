@@ -1,24 +1,23 @@
 import React from 'react';
 import s from './Skill.module.scss'
+import {skillsDataType} from "./SkillsData";
 
 
-export type SkillType = {
-    title: string
-    description: string
-    icon: { backgroundImage: string}
-}
-
-
-export function Skill(props: SkillType) {
+export function Skill(props: { skill: skillsDataType }) {
 
     return (
         <div className={s.skill}>
-            <div className={s.icon} style={props.icon}></div>
-            <h3 className={s.skillTitle}>{props.title}</h3>
-            <hr className={s.line}/>
-            <span className={s.description}>
-                {props.description}
-            </span>
+            {props.skill.map((value) => {
+                return (
+                    <>
+                        <img className={s.icon} src={value.icon}/>
+                        <h3 className={s.skillTitle}>{value.title}</h3>
+                        <hr className={s.line}/>
+                        <span className={s.description}>{value.description}</span>
+                    </>
+                )
+            })}
+
         </div>
     )
 }

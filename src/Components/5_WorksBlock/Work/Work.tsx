@@ -1,31 +1,27 @@
 import React from 'react';
 import s from './Work.module.scss'
+import {workDataType} from "./WorkData";
 
 
-export type WorkType = {
-    title: string
-    description: string
-    img: { backgroundImage: string }
-    linkWayPages: string
-    linkWayGit: string
-}
-
-
-export function Work(props: WorkType) {
-
-    const click = () => <a href={props.linkWayPages}></a>
+export function Work(props: { data: workDataType }) {
 
     return (
         <div className={s.work}>
-            <div className={s.img} style={props.img} onClick={click}></div>
-            <h3>{props.title}</h3>
-            <span className={s.description}>
-                {props.description}
-            </span>
-            <span className={s.link}>
-                <a href={props.linkWayGit} target="_blank">Look at GitHub</a>
-                <a href={props.linkWayPages} target="_blank">Look at GitHubPages</a>
-            </span>
+            {props.data.map((value) => {
+                return (
+                    <>
+                        <a href={value.linkWayPages}>
+                            <img className={s.img} src={value.img}/>
+                        </a>
+                        <h3>{value.title}</h3>
+                        <span className={s.description}>{value.description}</span>
+                        <span className={s.link}>
+                <a href={value.linkWayGit} target="_blank">Look at GitHub</a>
+                <a href={value.linkWayPages} target="_blank">Look at GitHubPages</a>
+                        </span>
+                    </>
+                )
+            })}
         </div>
     )
 }

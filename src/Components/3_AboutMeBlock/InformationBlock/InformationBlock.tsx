@@ -17,7 +17,12 @@ export function InformationBlock() {
     const [modal, setModal] = useState(true)
 
     let onModal = () => {
-        setModal(!modal)
+        setModal(!modal);
+        if (modal) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
     }
 
     return (
