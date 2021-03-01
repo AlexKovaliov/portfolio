@@ -1,69 +1,81 @@
 @import '../../../common/sass/variables';
 @import '../../../common/sass/mixins';
 
-.work {
+.works {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 450px;
-  text-align: center;
-  background-color: $bgSecondColor;
-  margin-bottom: 10px;
+  background-color: $bgColor;
   border: 1px solid $lineAndBorderColor;
 
-  .img {
-    justify-content: center;
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    &:hover {
-      opacity: 0.6;
-      cursor: pointer;
-    }
-  }
-
-  & h3 {
-    @include fonts($fontTitle, 15px, 500);
-    text-transform: uppercase;
-  }
-
-  & span {
-    @include fonts($fontText, 14px, 400);
-    line-height: 24px;
-    color: $textSecondColor;
-    margin: 0;
-  }
-
-  &:hover {
-    box-shadow: 0 0 7px $lineAndBorderColor;
-  }
-
-  @media screen and (max-width: 1124px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  &:hover {
-  }
-
-  a {
-    width: 100%;
-    text-decoration: none;
-    cursor: pointer;
-    @include fonts($fontTitle, 15px, 500);
-    color: $textColor;
-
-    &:hover {
-      color: $hoverColor;
-    }
-  }
-
-  .link {
-    width: 100%;
+  .work {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    margin: 10px 10px;
+    background-color: $bgColor;
+
+
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+
+    & h3 {
+      @include fonts($fontTitle, 15px, 500);
+      text-transform: uppercase;
+    }
+
+    & span {
+      @include fonts($fontText, 14px, 400);
+      line-height: 24px;
+      color: $textSecondColor;
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: 0 0 7px $lineAndBorderColor;
+    }
+
+    @media screen and (max-width: 1124px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+    }
+
+    a {
+      width: 100%;
+      text-decoration: none;
+      cursor: pointer;
+      @include fonts($fontTitle, 15px, 500);
+      color: $textColor;
+
+      &:hover {
+        color: $hoverColor;
+      }
+    }
+
+    .link {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

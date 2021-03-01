@@ -16,7 +16,10 @@ export function WorksBlock() {
 
                 <div className={s.works}>
                     <Zoom>
-                        <Work data={worksData}/>
+                        {worksData.map((el, i) =>
+                            (<Work key={i} linkWayPages={el.linkWayPages} title={el.title} img={el.img}
+                                   description={el.description} linkWayGit={el.linkWayGit}/>))
+                        }
                     </Zoom>
                 </div>
             </div>
