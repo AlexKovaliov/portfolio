@@ -23,7 +23,6 @@ export function WorksBlock() {
                     </Zoom>
                 </div>
             </div>
-
         </div>
     )
 }

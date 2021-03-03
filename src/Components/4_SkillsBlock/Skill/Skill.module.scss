@@ -5,11 +5,13 @@
   color: $textSecondColor;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 275px;
   height: 290px;
   text-align: center;
   padding: 10px 15px;
+  background-color: indigo;
   border: 1px solid $lineAndBorderColor;
 
   .icon {

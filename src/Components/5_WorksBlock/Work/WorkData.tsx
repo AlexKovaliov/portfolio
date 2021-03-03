@@ -17,14 +17,14 @@ export const worksData: workDataType = [
         description: "React, Hooks, TypeScript",
         img: imgSocial,
         linkWayGit: "https://github.com/AlexKovaliov/social-network",
-        linkWayPages: ""
+        linkWayPages: "#"
     },
     {
         title: "To do lists",
         description: "React, Hooks, TypeScript, Redux, Thunk, Axios",
         img: imgToDo,
         linkWayGit: "https://github.com/AlexKovaliov/TodoList",
-        linkWayPages: ""
+        linkWayPages: "#"
     },
     {
         title: "Estate project",

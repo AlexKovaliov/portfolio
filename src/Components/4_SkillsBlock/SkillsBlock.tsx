@@ -14,7 +14,11 @@ export function SkillsBlock() {
                 <Title isLineLeft={true} text={"Skills"}/>
                 <div className={s.skills}>
                     <Zoom>
-                        <Skill skill={skillsData}/>
+                        {skillsData.map((el, i) =>
+                            (<Skill key={i} title={el.title}
+                                    description={el.description}
+                                    icon={el.icon}/>))
+                        }
                     </Zoom>
                 </div>
             </div>

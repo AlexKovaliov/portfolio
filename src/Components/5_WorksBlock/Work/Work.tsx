@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import s from './Work.module.scss'
 
 interface WorkProps {
-    linkWayPages: string,
+    linkWayPages: string
     img: string,
     title: string,
     description: string,
@@ -10,6 +10,7 @@ interface WorkProps {
 }
 
 export const Work: FC<WorkProps> = ({linkWayPages, img, title, description, linkWayGit}) => {
+
     return (
         <div className={s.works}>
             <div className={s.work}>
