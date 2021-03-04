@@ -7,7 +7,7 @@ import {Zoom} from "react-awesome-reveal";
 import {worksData} from "./Work/WorkData";
 
 
-export function WorksBlock() {
+function WorksBlock() {
 
     return (
         <div id="works" className={s.worksBlock}>
@@ -27,3 +27,4 @@ export function WorksBlock() {
     )
 }
 
+export default React.memo(WorksBlock)

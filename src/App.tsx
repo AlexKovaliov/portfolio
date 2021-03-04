@@ -7,7 +7,7 @@ import {SkillsBlock} from "./Components/4_SkillsBlock/SkillsBlock";
 import {RemoteWorkBlock} from "./Components/6_RemoteWorkBlock/RemoteWorkBlock";
 import {Contact} from "./Components/7_ContactBlock/contact";
 import {FooterBlock} from './Components/9_FooterBlock/FooterBlock';
-import {WorksBlock} from "./Components/5_WorksBlock/WorksBlock";
+import WorksBlock from "./Components/5_WorksBlock/WorksBlock";
 import {InformationBlock} from "./Components/3_AboutMeBlock/InformationBlock/InformationBlock";
 
 

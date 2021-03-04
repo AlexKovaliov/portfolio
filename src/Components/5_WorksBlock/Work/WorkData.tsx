@@ -2,6 +2,8 @@ import imgSocial from '../../../assets/img/socil-img.jpg'
 import imgToDo from '../../../assets/img/ToDoList.png'
 import imgEstate from '../../../assets/img/real_estate_project.jpg'
 import imgMeditation from '../../../assets/img/Meditation.jpg'
+import imgWheels from '../../../assets/img/TwoWheels.jpg'
+
 
 export type workDataType = {
     title: string
@@ -21,7 +23,7 @@ export const worksData: workDataType = [
     },
     {
         title: "To do lists",
-        description: "React, Hooks, TypeScript, Redux, Thunk, Axios",
+        description: "React, Hooks, TypeScript, Redux, Thunk, Axios, Material UI",
         img: imgToDo,
         linkWayGit: "https://github.com/AlexKovaliov/TodoList",
         linkWayPages: "#"
@@ -39,5 +41,12 @@ export const worksData: workDataType = [
         img: imgMeditation,
         linkWayGit: "https://github.com/AlexKovaliov/Meditation-App",
         linkWayPages: "#"
+    },
+    {
+        title: "Two Wheels",
+        description: "HTML, CSS, React, Hooks, TypeScript",
+        img: imgWheels,
+        linkWayGit: "https://github.com/AlexKovaliov/two_wheels",
+        linkWayPages: "https://AlexKovaliov.github.io/two_wheels"
     }
 ]
