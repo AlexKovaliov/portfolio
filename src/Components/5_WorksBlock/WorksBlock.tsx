@@ -5,9 +5,12 @@ import {Work} from "./Work/Work";
 import {Title} from "../../common/generalComponents/Title/Title";
 import {Zoom} from "react-awesome-reveal";
 import {worksData} from "./Work/WorkData";
+import {nanoid} from 'nanoid'
 
 
 function WorksBlock() {
+
+    const worksId = nanoid()
 
     return (
         <div id="works" className={s.worksBlock}>
@@ -16,8 +19,8 @@ function WorksBlock() {
 
                 <div className={s.works}>
                     <Zoom>
-                        {worksData.map((el, i) =>
-                            (<Work key={i} linkWayPages={el.linkWayPages} title={el.title} img={el.img}
+                        {worksData.map((el) =>
+                            (<Work key={worksId} linkWayPages={el.linkWayPages} title={el.title} img={el.img}
                                    description={el.description} linkWayGit={el.linkWayGit}/>))
                         }
                     </Zoom>
